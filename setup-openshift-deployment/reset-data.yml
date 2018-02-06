@@ -7,7 +7,7 @@
      
     - name: Checkout source code from Github for db schemas
       git:
-        repo: "https://github.com/Estafet-LTD/{{ item.repo }}"
+        repo: "https://github.com/shukriev/{{ item.repo }}"
         dest: "{{ workdir }}/{{ item.repo }}"
         update: yes
       when: "{{ item.db }}"
